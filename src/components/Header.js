@@ -33,7 +33,7 @@ function Header({ onNavigate }) {
             <HomeIcon fontSize="small" />
             Home
           </a>
-          <a className="nav-link" href="#about" onClick={(e) => handleNavigation(e, '#about')}>
+          <a className="nav-link" href="#info" onClick={(e) => handleNavigation(e, '#info')}>
             <InfoIcon fontSize="small" />
             Info
           </a>

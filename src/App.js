@@ -3,12 +3,14 @@ import { useEffect, useMemo, useState } from 'react';
 import Header from './components/Header';
 import Body from './components/Body';
 import ContactForm from './components/ContactForm';
+import Info from './components/Info';
 import Footer from './components/Footer';
 
 function App() {
   const getPageFromHash = () => {
     const hash = (window.location.hash || '').toLowerCase();
     if (hash === '#contact') return 'contact';
+    if (hash === '#info') return 'info';
     return 'home';
   };
 
@@ -39,6 +41,7 @@ function App() {
     <div className="App">
       <Header onNavigate={onNavigate} />
       {currentPage === 'home' && <Body />}
+      {currentPage === 'info' && <Info />}
       {currentPage === 'contact' && <ContactForm />}
       <Footer />
     </div>
