@@ -4,15 +4,8 @@ import ButtonGroup from '@mui/material/ButtonGroup';
 import Rating from '@mui/material/Rating';
 import topVideoGamesData from '../data/topVideoGames.json';
 import topMoviesData from '../data/topMovies.json';
+import InterestCard from './InterestCard';
 import '../styles/Info.css';
-
-function InterestCard({ label }) {
-  return (
-    <div className="interest-card" aria-label={`Interest: ${label}`}>
-      {label}
-    </div>
-  );
-}
 
 function TopItemCard({ imageSrc, title, description, rating, opinion }) {
   return (
@@ -37,7 +30,7 @@ function TopItemCard({ imageSrc, title, description, rating, opinion }) {
 }
 
 function Info() {
-  const [selected, setSelected] = useState('personal');
+  const [selected, setSelected] = useState('professional');
 
   const toScore = (value) => {
     const parsed = typeof value === 'number' ? value : parseFloat(String(value));
