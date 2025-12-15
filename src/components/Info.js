@@ -3,6 +3,7 @@ import Button from '@mui/material/Button';
 import ButtonGroup from '@mui/material/ButtonGroup';
 import Rating from '@mui/material/Rating';
 import topVideoGamesData from '../data/topVideoGames.json';
+import topMoviesData from '../data/topMovies.json';
 import '../styles/Info.css';
 
 function InterestCard({ label }) {
@@ -136,16 +137,7 @@ function Info() {
 
   const topVideoGames = [...topVideoGamesData].sort((a, b) => toScore(b.score) - toScore(a.score));
 
-  const topMovies = [
-    {
-      id: 'movie-1',
-      title: 'Interstellar',
-      imageSrc: profileImageSrc,
-      description: 'Sci‑fi with emotional storytelling and stunning visuals.',
-      rating: 5,
-      opinion: 'It always hits—soundtrack, pacing, and scale are incredible.',
-    },
-  ];
+  const topMovies = [...topMoviesData].sort((a, b) => toScore(b.score) - toScore(a.score));
 
   return (
     <main className="info">
@@ -254,7 +246,7 @@ function Info() {
             <div className="personal-details" aria-label="Personal description">
               <h2>About me</h2>
               <p>
-                My name is Mateo Arias and I live in Montevideo/Uruguay, I'm a software developer who is studying the Bachelor's Degree in Systems at Universidad ORT. I’m someone who gets energy from being close to my friends, always trying to show up for them, listening, and genuinely caring.
+                My name is Mateo Arias, I'm 23 years old and I live in Montevideo/Uruguay, I'm a software developer who is studying the Bachelor's Degree in Systems at Universidad ORT. I’m someone who gets energy from being close to my friends, always trying to show up for them, listening, and genuinely caring.
                 Music is a constant for me: I use it to focus, reset, and match the mood of whatever I’m doing, and I’m always
                 planning the next step to keep my projects moving forward. Professionally, I love logical problem-solving that fixes
                 real inefficiencies and turns messy situations into clear, reliable solutions. I’m growing toward full‑stack
@@ -279,10 +271,10 @@ function Info() {
               {topMovies.map((item) => (
                 <TopItemCard
                   key={item.id}
-                  imageSrc={item.imageSrc}
-                  title={item.title}
+                  imageSrc={item.imageUrl}
+                  title={item.name}
                   description={item.description}
-                  rating={item.rating}
+                  rating={toScore(item.score)}
                   opinion={item.opinion}
                 />
               ))}

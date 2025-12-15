@@ -1,0 +1,50 @@
+[
+  {
+    "id": "donnie-darko",
+    "name": "Donnie Darko",
+    "score": 5,
+    "description": "Donnie Darko is a psychological sci-fi thriller about a troubled teenager who experiences visions of a mysterious figure in a rabbit costume and begins to question reality, time, and fate. The film blends coming-of-age drama with time travel elements, exploring themes of destiny, mental health, and sacrifice.",
+    "opinion": "This movie blew my mind; it had me and my friends glued to our seats, not knowing the lengths this movie took to surprise the viewer and once you reach the ending, not only everything starts to make sense, but makes you question every part of the film. Everyone must watch it twice.",
+    "imageUrl": "https://m.media-amazon.com/images/M/MV5BMWE3NTYzZmEtM2U5MS00MDZhLTk2ZTQtZTgzNjg0ZGQ5ZjM0XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+  },
+  {
+    "id": "django-unchained",
+    "name": "Django Unchained",
+    "score": 4,
+    "description": "Django Unchained is a western film set in the pre–Civil War United States that follows Django, a freed slave who teams up with a bounty hunter to rescue his wife from a brutal plantation owner. The movie blends action, dark humor, and social commentary, exploring themes of freedom, revenge, and justice.",
+    "opinion": "This movie is a must for any Tarantino fan; it is funny, intense, filled with action and with remarcable performances from Samuel L Jackson and Leo DiCaprio",
+    "imageUrl": "https://spoilertown.com/wp-content/uploads/2024/06/django-unchained-2012.webp"
+  },
+  {
+    "id": "pulp-fiction",
+    "name": "Pulp Fiction",
+    "score": 4,
+    "description": "Pulp Fiction is a crime film that tells multiple interconnected stories involving criminals, hitmen, and ordinary people in Los Angeles. Known for its non-linear narrative, sharp dialogue, and stylized violence, the film explores themes of chance, morality, and redemption.",
+    "opinion": "My first introduction to Tarantino, a mesmerizing film about the the harsh criminal enviroment of Los Angeles. It is filled with iconic lines and scenes that even to this day are hillarious and thrilling.",
+    "imageUrl": "https://es.web.img3.acsta.net/img/05/66/05663f00b8b5df58b003aaf5c46ef8ad.jpg"
+  },
+  {
+    "id": "it-2017",
+    "name": "IT (remake)",
+    "score": 4,
+    "description": "It (2017) is a supernatural horror film that follows a group of children who band together to confront a shape-shifting entity that terrorizes their town, often appearing as the clown Pennywise. The movie explores themes of fear, childhood trauma, and friendship while blending psychological and supernatural horror.",
+    "opinion": "This movie isn't scary at all, however it is amazing how Pennywise is portrayed and how the play with the main characters fears and insecurities. Its a must watch, specially if you watched the original (which in my opinion blows).",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/en/5/5a/It_%282017%29_poster.jpg"
+  },
+  {
+    "id": "dungeons-and-dragons-honor-among-thieves",
+    "name": "Dungeons & Dragons: Honor among thieves",
+    "score": 3,
+    "description": "Dungeons & Dragons: Honor Among Thieves is a fantasy adventure film that follows a charming thief and a group of unlikely heroes as they embark on a quest to recover a stolen relic. Blending action, humor, and classic D&D elements, the movie emphasizes teamwork, redemption, and lighthearted epic fantasy.",
+    "opinion": "As a D&D fan this movie was epic to me, however I am aware of its flaws; it is not perfect by a long shot, but if you are interested in seeing what D&D is like... This is a very good introduction to an amazing world of posibilities.",
+    "imageUrl": "https://m.media-amazon.com/images/M/MV5BOGRjMjQ0ZDAtODc0OS00MGY1LTkxMTMtODhhNjY5NTM4N2IwXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+  },
+  {
+    "id": "once-upon-a-time-in-hollywood",
+    "name": "Once upon a time in Hollywood",
+    "score": 3,
+    "description": "Once Upon a Time in Hollywood is a comedy-drama film set in 1969 Los Angeles that follows a fading television actor and his stunt double as they navigate a changing film industry. The movie blends historical events with fiction, exploring themes of friendship, nostalgia, and the end of Hollywood’s golden era.",
+    "opinion": "This is a very different film from Tarantino, it doesn't focus as much on violence and action, but it glows in portraying the hardships of acting in the volatile world of Hollywood.",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/a/a6/Once_Upon_a_Time_in_Hollywood_poster.png/250px-Once_Upon_a_Time_in_Hollywood_poster.png"
+  }
+]
