@@ -24,6 +24,7 @@
   min-height: 100%;
   background: #fff;
   border: 1px solid #ddd;
+  border-radius: 12px;
   padding: 2rem;
 }
 
@@ -154,15 +155,106 @@
   width: 50%;
   min-height: 100%;
   background: #fff;
+  padding: 2rem;
+}
+
+.professional-header {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.professional-photo {
+  flex: 0 0 140px;
+}
+
+.professional-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 2px solid #000;
+  border-radius: 12px;
+}
+
+.professional-summary {
+  flex: 1;
+  min-width: 0;
+}
+
+.professional-summary h2 {
+  margin: 0 0 0.75rem;
+}
+
+.professional-summary p {
+  margin: 0;
+}
+
+.download-cv-row {
+  margin-top: 1.5rem;
+}
+
+.stack-section {
+  margin-top: 1.75rem;
+}
+
+.stack-section h2 {
+  margin: 0 0 0.75rem;
+}
+
+.stack-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.stack-category h3 {
+  margin: 0 0 0.75rem;
+}
+
+.experience-section h2 {
+  margin: 0 0 0.75rem;
+}
+
+.experience-item {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.experience-item + .experience-item {
+  margin-top: 1rem;
+}
+
+.experience-role {
+  margin: 0;
+}
+
+.experience-meta {
+  margin: 0.35rem 0 0.75rem;
+}
+
+.experience-bullets {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.experience-bullets li {
+  margin: 0 0 0.5rem;
+}
+
+.experience-bullets li:last-child {
+  margin-bottom: 0;
 }
 
 .info-left {
   border: 1px solid #ddd;
   border-right: none;
+  border-radius: 12px 0 0 12px;
 }
 
 .info-right {
   border: 1px solid #ddd;
+  border-radius: 0 12px 12px 0;
 }
 
 @media (max-width: 768px) {
@@ -176,11 +268,31 @@
 
   .info-half {
     width: 100%;
+    padding: 1.25rem;
+  }
+
+  .professional-header {
+    flex-direction: column;
+  }
+
+  .professional-photo {
+    flex-basis: auto;
+    width: 100%;
+    max-width: 220px;
+  }
+
+  .stack-grid {
+    grid-template-columns: 1fr;
   }
 
   .info-left {
     border-right: 1px solid #ddd;
     border-bottom: none;
+    border-radius: 12px 12px 0 0;
+  }
+
+  .info-right {
+    border-radius: 0 0 12px 12px;
   }
 
   .info-single {

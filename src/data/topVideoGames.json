@@ -1,0 +1,50 @@
+[
+  {
+    "id": "red-dead-redemption-2",
+    "name": "Read Dead Redemption 2",
+    "score": 5,
+    "description": "Red Dead Redemption 2 is an open-world action-adventure game set in the late 1800s American frontier. It follows Arthur Morgan, an outlaw navigating loyalty, survival, and morality as the age of the Wild West comes to an end, featuring a rich narrative, immersive world, and deep character development.",
+    "opinion": "Greatest game I've played so fat, it narrates a beautiful character-development driven story that always hits my heart. Everyone should play it at least once.",
+    "imageUrl": "https://image.api.playstation.com/gs2-sec/appkgo/prod/CUSA08519_00/12/i_3da1cf7c41dc7652f9b639e1680d96436773658668c7dc3930c441291095713b/i/icon0.png"
+  },
+  {
+    "id": "death-stranding",
+    "name": "Death Stranding",
+    "score": 4,
+    "description": "Death Stranding is an action-adventure game set in a post-apocalyptic world where society has become isolated after a mysterious supernatural event. Players take on the role of Sam Porter Bridges, a courier tasked with reconnecting cities and people, while exploring themes of isolation, human connection, and cooperation.",
+    "opinion": "Great game with a confusing begining, but once you get past that it becomes one of the most enthralling cinematic experiences I've ever seen.",
+    "imageUrl": "https://m.media-amazon.com/images/M/MV5BNzNlMjExMDItYmE3MC00Zjk4LWI5MjUtMmUxMjdjMzZiNTc2XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    "id": "elden-ring",
+    "name": "Elden Ring",
+    "score": 4.5,
+    "description": "Elden Ring is an open-world action RPG set in a dark fantasy world known as the Lands Between. Players explore vast landscapes, face challenging enemies, and uncover a fragmented mythos as they seek to restore the shattered Elden Ring, with a strong focus on exploration, combat mastery, and player freedom.",
+    "opinion": "My first experience to a \"souls-like\" game, at first I didnt understand anything that was happening around me, everything was very difficult and confusing. But once you discover you can persevere the misteries and hardships you feel unstopable.",
+    "imageUrl": "https://media.vandal.net/t200/74234/elden-ring-202161213154579_1.jpg"
+  },
+  {
+    "id": "the-witcher-3-wild-hunt",
+    "name": "The Witcher 3: Wild Hunt",
+    "score": 4,
+    "description": "The Witcher 3: Wild Hunt is an open-world action RPG that follows Geralt of Rivia, a professional monster hunter searching for his adopted daughter in a war-torn fantasy world. The game is known for its rich storytelling, meaningful player choices, deep characters, and immersive side quests.",
+    "opinion": "My first experience with the Witcher series, its a huge world filled with lore, misteries and hardships to uncover. The story-telling is almost legendary in my opinion but the RPG aspects makes it unattractive for most people.",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202211/0711/qezXTVn1ExqBjVjR5Ipm97IK.png"
+  },
+  {
+    "id": "resident-evil-4",
+    "name": "Resident Evil 4",
+    "score": 4,
+    "description": "Resident Evil 4 is a survival horror action game that follows Leon S. Kennedy on a mission to rescue the U.S. president’s daughter from a hostile rural village. The game combines intense combat, atmospheric horror, and resource management, redefining the series with a stronger focus on action and over-the-shoulder gameplay.",
+    "opinion": "A very entertaining game with a bizarre and grotesque theme, it was my very first introduction to the series and I think its the most iconic Resident Evil to exist.",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/en/d/d9/Resi4-gc-cover.jpg"
+  },
+  {
+    "id": "marvels-spiderman",
+    "name": "Marvel's Spiderman",
+    "score": 3.5,
+    "description": "Marvel’s Spider-Man is an open-world action-adventure game that puts players in the role of Peter Parker as he balances his life as a superhero and a regular person. Set in a detailed version of New York City, the game features fluid web-slinging, dynamic combat, and a story focused on responsibility, sacrifice, and heroism.",
+    "opinion": "As a Spiderman fan, my opinion was a little bit biassed when I played it. It is a great game with a great story that involves the player emotionally; however it is not the \"masterpiece\" everyone said it was.",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202011/0402/C784xeOFo2wViCf4m5bxgoeH.png"
+  }
+]
