@@ -1,7 +1,7 @@
 .header {
   background-color: #333;
-  padding: 0;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
 }
 
 .navbar {
@@ -11,29 +11,122 @@
   padding: 1rem 2rem;
   max-width: 1200px;
   margin: 0 auto;
+  width: 100%;
 }
 
-.navbar-brand {
+.navbar-title {
   font-size: 1.5rem;
   font-weight: bold;
   color: #fff;
 }
 
-.navbar-menu {
+.menu-toggle-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
   display: flex;
-  list-style: none;
-  gap: 2rem;
-  margin: 0;
-  padding: 0;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+  font-size: 1.5rem;
 }
 
-.navbar-menu a {
+.menu-toggle-btn:hover {
+  color: #4CAF50;
+  transform: scale(1.1);
+}
+
+.menu-toggle-btn svg {
+  width: 24px;
+  height: 24px;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+  background-color: #2a2a2a;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  width: 100%;
+  max-width: 300px;
+  height: 100vh;
+}
+
+.dropdown-menu.opening {
+  animation: slideFromRight 0.3s ease forwards;
+}
+
+.dropdown-menu.closing {
+  animation: slideToRight 0.3s ease forwards;
+}
+
+@keyframes slideFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideToRight {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+}
+
+.menu-list {
+  list-style: none;
+  margin: 0;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  height: 100%;
+}
+
+.menu-list li {
+  margin: 0;
+}
+
+.menu-list a {
   color: #fff;
   text-decoration: none;
   font-size: 1rem;
-  transition: color 0.3s ease;
+  display: block;
+  padding: 0.75rem 0;
+  transition: color 0.3s ease, padding-left 0.3s ease;
+  border-left: 3px solid transparent;
+  padding-left: 0.5rem;
 }
 
-.navbar-menu a:hover {
+.menu-list a:hover {
   color: #4CAF50;
+  padding-left: 1rem;
+  border-left-color: #4CAF50;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 1rem;
+  }
+
+  .navbar-title {
+    font-size: 1.2rem;
+  }
+
+  .menu-list {
+    padding: 1rem;
+  }
 }
