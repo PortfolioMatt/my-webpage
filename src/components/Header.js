@@ -19,8 +19,9 @@ function Header({ onNavigate }) {
     return () => window.removeEventListener('resize', updateHeaderHeight);
   }, []);
 
-  const handleNavigation = (page) => {
-    onNavigate(page);
+  const handleNavigation = (e, hash) => {
+    e.preventDefault();
+    onNavigate(hash);
   };
 
   return (
@@ -28,22 +29,22 @@ function Header({ onNavigate }) {
       <nav className="navbar">
         <div className="navbar-title">Welcome to my Portfolio</div>
         <div className="navbar-links">
-          <button className="nav-link" onClick={() => handleNavigation('home')}>
+          <a className="nav-link" href="#home" onClick={(e) => handleNavigation(e, '#home')}>
             <HomeIcon fontSize="small" />
             Home
-          </button>
-          <a className="nav-link" href="#about">
+          </a>
+          <a className="nav-link" href="#about" onClick={(e) => handleNavigation(e, '#about')}>
             <InfoIcon fontSize="small" />
             Info
           </a>
-          <a className="nav-link" href="#projects">
+          <a className="nav-link" href="#projects" onClick={(e) => handleNavigation(e, '#projects')}>
             <FolderIcon fontSize="small" />
             Projects
           </a>
-          <button className="nav-link" onClick={() => handleNavigation('contact')}>
+          <a className="nav-link" href="#contact" onClick={(e) => handleNavigation(e, '#contact')}>
             <ContactMailIcon fontSize="small" />
             Contact
-          </button>
+          </a>
         </div>
       </nav>
     </header>
