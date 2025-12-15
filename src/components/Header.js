@@ -27,7 +27,7 @@ function Header({ onNavigate }) {
   return (
     <header ref={headerRef} className="header">
       <nav className="navbar">
-        <div className="navbar-title">Welcome to my Portfolio</div>
+        <div className="navbar-title">Welcome to Mateo's Portfolio</div>
         <div className="navbar-links">
           <a className="nav-link" href="#home" onClick={(e) => handleNavigation(e, '#home')}>
             <HomeIcon fontSize="small" />

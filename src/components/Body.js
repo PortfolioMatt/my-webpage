@@ -11,8 +11,10 @@ function Body() {
       <section id="about" className="content">
         <h2>About this site</h2>
         <p>
-          This portfolio presents selected work and brief context on my approach to building software.
-          For technical details and skills, please visit the Info section.
+          This webpage was built using React, a popular JavaScript library for building user interfaces. It showcases my skills and projects as a developer. The site is designed to be responsive and user-friendly, ensuring a seamless experience across different devices.
+        </p>
+        <p>
+          Feel free to explore the various sections, including my projects, background information, and contact details. If you have any questions or would like to connect, don't hesitate to reach out through the contact form.
         </p>
       </section>
     </main>
