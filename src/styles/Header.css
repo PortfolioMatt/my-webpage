@@ -1,7 +1,11 @@
 .header {
   background-color: #333;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1101;
 }
 
 .navbar {
@@ -12,6 +16,8 @@
   max-width: 1200px;
   margin: 0 auto;
   width: 100%;
+  position: relative;
+  z-index: 1101;
 }
 
 .navbar-title {
@@ -20,100 +26,28 @@
   color: #fff;
 }
 
-.menu-toggle-btn {
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.nav-link {
   background: none;
   border: none;
   color: #fff;
   cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.5rem;
-  transition: color 0.3s ease, transform 0.3s ease;
-  font-size: 1.5rem;
-}
-
-.menu-toggle-btn:hover {
-  color: #4CAF50;
-  transform: scale(1.1);
-}
-
-.menu-toggle-btn svg {
-  width: 24px;
-  height: 24px;
-}
-
-/* Dropdown Menu */
-.dropdown-menu {
-  background-color: #2a2a2a;
-  overflow: hidden;
-  position: absolute;
-  right: 0;
-  top: 100%;
-  width: 100%;
-  max-width: 300px;
-  height: 100vh;
-}
-
-.dropdown-menu.opening {
-  animation: slideFromRight 0.3s ease forwards;
-}
-
-.dropdown-menu.closing {
-  animation: slideToRight 0.3s ease forwards;
-}
-
-@keyframes slideFromRight {
-  from {
-    opacity: 0;
-    transform: translateX(100%);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes slideToRight {
-  from {
-    opacity: 1;
-    transform: translateX(0);
-  }
-  to {
-    opacity: 0;
-    transform: translateX(100%);
-  }
-}
-
-.menu-list {
-  list-style: none;
-  margin: 0;
-  padding: 1rem 2rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  height: 100%;
-}
-
-.menu-list li {
-  margin: 0;
-}
-
-.menu-list a {
-  color: #fff;
-  text-decoration: none;
   font-size: 1rem;
-  display: block;
-  padding: 0.75rem 0;
-  transition: color 0.3s ease, padding-left 0.3s ease;
-  border-left: 3px solid transparent;
-  padding-left: 0.5rem;
+  text-decoration: none;
+  padding: 0.5rem 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: color 0.3s ease;
 }
 
-.menu-list a:hover {
+.nav-link:hover {
   color: #4CAF50;
-  padding-left: 1rem;
-  border-left-color: #4CAF50;
 }
 
 /* Responsive */
@@ -126,7 +60,7 @@
     font-size: 1.2rem;
   }
 
-  .menu-list {
-    padding: 1rem;
+  .navbar-links {
+    gap: 1rem;
   }
 }
