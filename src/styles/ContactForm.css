@@ -85,3 +85,28 @@
   background-color: #bbb;
   cursor: not-allowed;
 }
+
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 2rem 1rem;
+  }
+
+  .contact-section h2 {
+    font-size: 1.6rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .contact-form {
+    padding: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-section {
+    padding: 1.5rem 0.75rem;
+  }
+
+  .contact-form {
+    padding: 1rem;
+  }
+}

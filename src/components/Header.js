@@ -31,19 +31,19 @@ function Header({ onNavigate }) {
         <div className="navbar-links">
           <a className="nav-link" href="#home" onClick={(e) => handleNavigation(e, '#home')}>
             <HomeIcon fontSize="small" />
-            Home
+            <span className="nav-label">Home</span>
           </a>
           <a className="nav-link" href="#info" onClick={(e) => handleNavigation(e, '#info')}>
             <InfoIcon fontSize="small" />
-            Info
+            <span className="nav-label">Info</span>
           </a>
           <a className="nav-link" href="#projects" onClick={(e) => handleNavigation(e, '#projects')}>
             <FolderIcon fontSize="small" />
-            Projects
+            <span className="nav-label">Projects</span>
           </a>
           <a className="nav-link" href="#contact" onClick={(e) => handleNavigation(e, '#contact')}>
             <ContactMailIcon fontSize="small" />
-            Contact
+            <span className="nav-label">Contact</span>
           </a>
         </div>
       </nav>

@@ -43,3 +43,44 @@
   color: #666;
   line-height: 1.6;
 }
+
+@media (max-width: 768px) {
+  .body {
+    padding: 2rem 1rem;
+  }
+
+  .hero {
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .content {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .body {
+    padding: 1.5rem 0.75rem;
+  }
+
+  .hero {
+    padding: 1.25rem;
+  }
+
+  .hero h1 {
+    font-size: 1.75rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .content {
+    padding: 1.25rem;
+  }
+}
