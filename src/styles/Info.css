@@ -81,6 +81,17 @@
   border-radius: 10px;
 }
 
+.interest-card--clickable {
+  cursor: pointer;
+  font: inherit;
+  color: inherit;
+  text-align: left;
+}
+
+.interest-card--clickable:hover {
+  background: #fff;
+}
+
 .top-items {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -273,12 +284,33 @@
 
   .professional-header {
     flex-direction: column;
+    align-items: center;
   }
 
   .professional-photo {
     flex-basis: auto;
     width: 100%;
     max-width: 220px;
+    margin: 0 auto;
+  }
+
+  .professional-summary {
+    text-align: center;
+  }
+
+  .download-cv-row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .professional-left .interests-grid {
+    justify-content: center;
+  }
+
+  .stack-section h2,
+  .stack-category h3 {
+    text-align: center;
   }
 
   .stack-grid {

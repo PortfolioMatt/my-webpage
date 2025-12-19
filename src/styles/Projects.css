@@ -5,6 +5,76 @@
   margin-top: 2rem;
 }
 
+.projects-filter {
+  margin-top: 1.5rem;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.projects-filter-controls {
+  display: flex;
+  gap: 0.75rem;
+  align-items: stretch;
+}
+
+.projects-filter-input {
+  flex: 1;
+}
+
+.projects-filter-button {
+  border: 1px solid #ddd;
+  background: #f5f5f5;
+  border-radius: 10px;
+  padding: 0.6rem 0.9rem;
+  cursor: pointer;
+  font: inherit;
+}
+
+.projects-filter-add:not(:disabled) {
+  background: rgba(0, 0, 255, 0.06);
+}
+
+.projects-filter-add:not(:disabled):hover {
+  background: rgba(0, 0, 255, 0.1);
+}
+
+.projects-filter-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.projects-filter-reset {
+  background: rgba(255, 0, 0, 0.06);
+}
+
+.projects-filter-reset:hover {
+  background: rgba(255, 0, 0, 0.1);
+}
+
+.projects-filter-active {
+  margin-top: 0.75rem;
+}
+
+.projects-filter-hint {
+  margin: 0 0 0.5rem;
+  color: #666;
+}
+
+.projects-filter .interest-card--clickable:hover {
+  background: rgba(255, 0, 0, 0.08);
+}
+
+.projects-list .interest-card--highlight {
+  background: rgba(0, 128, 0, 0.12);
+}
+
+.projects-empty {
+  margin: 0;
+  color: #666;
+}
+
 .project-card {
   background: #fff;
   border: 1px solid #ddd;
@@ -28,6 +98,7 @@
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
+  flex: 0 0 auto;
 }
 
 .project-live-link {
@@ -119,6 +190,10 @@
     margin-top: 1.5rem;
   }
 
+  .projects-filter-controls {
+    flex-direction: column;
+  }
+
   .project-card {
     padding: 1rem;
   }
@@ -134,7 +209,15 @@
 
 @media (max-width: 480px) {
   .project-title-row {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .project-title {
+    flex: 1;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 }
