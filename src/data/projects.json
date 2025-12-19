@@ -1,22 +1,10 @@
 [
   {
-    "id": "arquireforma",
-    "title": "ArquiReforma",
-    "repoUrl": "https://github.com/PortfolioMatt/ArquiReforma",
-    "description": "Modern landing page for an architecture and renovation company, built with React, TypeScript, Tailwind CSS, and Vite. You can view the deployed site at arquireforma.netlify.app. ArquiReforma is a single-page application (SPA) showcasing services focused on full renovations, interior design, and architectural solutions, featuring smooth scroll animations, a responsive layout, and a modern user interface.",
-    "images": [
-      { "src": "/projectImages/ArquiReforma/Landing1.JPG", "alt": "ArquiReforma screenshot 1" },
-      { "src": "/projectImages/ArquiReforma/Landing2.JPG", "alt": "ArquiReforma screenshot 2" },
-      { "src": "/projectImages/ArquiReforma/Landing3.JPG", "alt": "ArquiReforma screenshot 3" },
-      { "src": "/projectImages/ArquiReforma/Landing4.JPG", "alt": "ArquiReforma screenshot 4" }
-    ],
-    "technologies": ["REACT", "Javascript", "Typescript", "Generative AI", "Netlify", "Tailwind CSS"]
-  },
-  {
     "id": "little-lemon-api",
     "title": "LittleLemonAPI",
     "repoUrl": "https://github.com/PortfolioMatt/Little-Lemon-API",
-    "description": "RESTful API developed with Django REST Framework (DRF) and Djoser for restaurant management, including an ordering system, shopping cart, and user roles. The API allows different user types (Customers, Managers, Delivery Crew) to interact with the platform: customers can browse the menu, add items to a cart, place orders, and view their order history; managers can manage the menu, assign delivery staff, and update order statuses; and the delivery crew can view and update their assigned deliveries.",
+    "description": "RESTful API developed with Django REST Framework focused on restaurant operations and role-based access control. The system includes user authentication, order management, shopping cart functionality, and differentiated permissions for customers, managers, and delivery crew. Designed with clear separation of concerns and business rules enforcement at the API level.",
+    "url-access": "",
     "images": [
       { "src": "/projectImages/LittleLemonAPI/AdminGeneralView.JPG", "alt": "LittleLemonAPI screenshot 1" },
       { "src": "/projectImages/LittleLemonAPI/AdminSite.JPG", "alt": "LittleLemonAPI screenshot 2" },
@@ -26,41 +14,55 @@
       { "src": "/projectImages/LittleLemonAPI/RatingsEndpoint.JPG", "alt": "LittleLemonAPI screenshot 6" }
     ],
     "technologies": [
-      "Django Rest Framework",
       "Python",
+      "Django",
+      "Django REST Framework",
+      "RESTful APIs",
+      "CRUD Operations",
+      "Role-Based Access Control (RBAC)",
+      "Authentication & Authorization",
       "Djoser",
-      "Django Filter",
-      "API Restful",
+      "Django Filters",
       "SQLite",
+      "API Design",
+      "Backend Architecture",
       "Pipenv"
     ]
-  },
-  {
-    "id": "react-calculator",
-    "title": "React Calculator",
-    "repoUrl": "https://github.com/PortfolioMatt/React-Calculator",
-    "description": "A simple and intuitive calculator application built with React that enables basic mathematical operations with a modern and responsive user interface. The application maintains a cumulative total and allows successive arithmetic operations, ideal for quick and simple calculations.",
-    "images": [
-      { "src": "/projectImages/ReactCalculator/ReactCalculator.JPG", "alt": "React Calculator screenshot 1" }
-    ],
-    "technologies": ["React", "Javascript"]
   },
   {
     "id": "oraculum",
     "title": "Oraculum",
     "repoUrl": "https://github.com/PortfolioMatt/Oraculum",
-    "description": "Oraculum is an AI-powered chatbot designed to answer questions with a mystical tone, inspired by fantasy worlds such as Dungeons & Dragons. It blends modern technology with the feeling of consulting an omniscient oracle, creating a unique experience that combines knowledge, magic, and usability. Oraculum is an AI chat application built with React, Vite, and an Express backend API, with deployment support on Netlify. The live site is available at oraculum-the-wise.netlify.app.",
+    "description": "AI-powered web chatbot built with React and TypeScript that integrates the OpenAI API to generate dynamic conversational responses. The project focuses on asynchronous data handling, external API integration, state management, and user experience for conversational interfaces, with a clear separation between UI and service logic.",
+    "url-access": "https://oraculum-the-wise.netlify.app",
     "images": [
       { "src": "/projectImages/Oraculum/Login.JPG", "alt": "Oraculum screenshot 1" },
       { "src": "/projectImages/Oraculum/Chat.JPG", "alt": "Oraculum screenshot 2" }
     ],
-    "technologies": ["Python", "OpenAI", "Javascript", "React", "Typescript", "Netlify", "Express", "Vite", "Generative AI", "CSS", "HTML", "Node.js"]
+    "technologies": [
+      "React",
+      "TypeScript",
+      "JavaScript",
+      "OpenAI API",
+      "REST APIs",
+      "Async/Await",
+      "State Management",
+      "API Integration",
+      "Node.js",
+      "Express",
+      "Vite",
+      "Netlify",
+      "Generative AI",
+      "CSS",
+      "HTML"
+    ]
   },
   {
     "id": "urban-soles",
     "title": "Urban Soles",
     "repoUrl": "https://github.com/PortfolioMatt/UrbanSoles",
-    "description": "UX/UI design project for a footwear e-commerce platform that allows users to register, browse products, save shipping addresses, manage payment methods, and track their orders, with a strong focus on a clear and smooth shopping experience. UrbanSoles is a modern e-commerce application specialized in urban footwear, built with React, TypeScript, and Vite. The deployed site is available at urban-soles.netlify.app. The platform provides a complete online shopping experience, including user management, shopping cart functionality, order processing, and a full user profile system with addresses and payment methods.",
+    "description": "Frontend MVP for an e-commerce platform focused on user flows, UI architecture, and state management. Built with React and TypeScript, the application includes authentication simulation, product catalog, user profile management, order history, and payment method handling using mock data. Designed to be easily extendable for backend integration.",
+    "url-access": "https://urban-soles.netlify.app",
     "images": [
       { "src": "/projectImages/UrbanSoles/Landing.JPG", "alt": "Urban Soles screenshot 1" },
       { "src": "/projectImages/UrbanSoles/Login.JPG", "alt": "Urban Soles screenshot 2" },
@@ -68,6 +70,61 @@
       { "src": "/projectImages/UrbanSoles/Orders.JPG", "alt": "Urban Soles screenshot 4" },
       { "src": "/projectImages/UrbanSoles/UserInfo.JPG", "alt": "Urban Soles screenshot 5" }
     ],
-    "technologies": ["Typescript", "Generative AI", "Javascript", "React", "Vite", "Netlify", "CSS", "HTML"]
+    "technologies": [
+      "React",
+      "TypeScript",
+      "JavaScript",
+      "Frontend Architecture",
+      "State Management",
+      "Component-Based Design",
+      "UX/UI Design",
+      "Mocked Data",
+      "Vite",
+      "Netlify",
+      "CSS",
+      "HTML"
+    ]
+  },
+  {
+    "id": "arquireforma",
+    "title": "ArquiReforma",
+    "repoUrl": "https://github.com/PortfolioMatt/ArquiReforma",
+    "description": "Single-page landing application developed for an architecture and renovation studio, focused on modern UI, responsiveness, and smooth user interactions. The project emphasizes layout composition, reusable components, and visual polish through animations and styling.",
+    "url-access": "https://arquireforma.netlify.app",
+    "images": [
+      { "src": "/projectImages/ArquiReforma/Landing1.JPG", "alt": "ArquiReforma screenshot 1" },
+      { "src": "/projectImages/ArquiReforma/Landing2.JPG", "alt": "ArquiReforma screenshot 2" },
+      { "src": "/projectImages/ArquiReforma/Landing3.JPG", "alt": "ArquiReforma screenshot 3" },
+      { "src": "/projectImages/ArquiReforma/Landing4.JPG", "alt": "ArquiReforma screenshot 4" }
+    ],
+    "technologies": [
+      "React",
+      "TypeScript",
+      "JavaScript",
+      "Tailwind CSS",
+      "Responsive Design",
+      "UI Animations",
+      "Vite",
+      "Netlify",
+      "CSS"
+    ]
+  },
+  {
+    "id": "react-calculator",
+    "title": "React Calculator",
+    "repoUrl": "https://github.com/PortfolioMatt/React-Calculator",
+    "description": "Basic calculator application built with React to demonstrate core concepts such as component composition, state management, and event handling. Focused on reinforcing React fundamentals and clean UI behavior for simple user interactions.",
+    "url-access": "",
+    "images": [
+      { "src": "/projectImages/ReactCalculator/ReactCalculator.JPG", "alt": "React Calculator screenshot 1" }
+    ],
+    "technologies": [
+      "React",
+      "JavaScript",
+      "useState",
+      "Component Basics",
+      "Event Handling",
+      "Hooks"
+    ]
   }
 ]

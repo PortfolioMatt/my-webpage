@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import NavigateBeforeIcon from '@mui/icons-material/NavigateBefore';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import LanguageIcon from '@mui/icons-material/Language';
 import InterestCard from './InterestCard';
 import projectsData from '../data/projects.json';
 import '../styles/Body.css';
@@ -11,6 +12,9 @@ import '../styles/Projects.css';
 function ProjectCard({ project }) {
   const [activeImageIndex, setActiveImageIndex] = useState(0);
   const totalImages = project.images.length;
+
+  const liveUrl = String(project['url-access'] ?? '').trim();
+  const hasLiveUrl = liveUrl.length > 0;
 
   const activeImage = project.images[activeImageIndex] ?? null;
   const hasImages = totalImages > 0;
@@ -30,16 +34,30 @@ function ProjectCard({ project }) {
     <article className="project-card" aria-label={`Project: ${project.title}`}>
       <div className="project-title-row" aria-label="Project title">
         <h3 className="project-title">{project.title}</h3>
-        <a
-          className="project-repo-link"
-          href={project.repoUrl}
-          target="_blank"
-          rel="noreferrer"
-          aria-label="Open repository on GitHub"
-          title="Open repository on GitHub"
-        >
-          <GitHubIcon fontSize="small" />
-        </a>
+        <div className="project-links" aria-label="Project links">
+          {hasLiveUrl && (
+            <a
+              className="project-live-link"
+              href={liveUrl}
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Open live project"
+              title="Open live project"
+            >
+              <LanguageIcon fontSize="small" />
+            </a>
+          )}
+          <a
+            className="project-repo-link"
+            href={project.repoUrl}
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Open repository on GitHub"
+            title="Open repository on GitHub"
+          >
+            <GitHubIcon fontSize="small" />
+          </a>
+        </div>
       </div>
 
       <div className="project-carousel" aria-label={`${project.title} images`}>
@@ -85,7 +103,7 @@ function Projects() {
       <section className="content" aria-label="Projects introduction">
         <h2>Projects</h2>
         <p>
-          In this section I will detail personal projects I have built using modern technologies. I also include access to the
+          In this section I will detail personal projects I have built using modern technologies. I also include access to the depoloyed projects and the GitHub
           repositories of these projects so you can view their documentation and understand how the code works.
         </p>
       </section>
