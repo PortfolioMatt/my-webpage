@@ -1,70 +1,135 @@
-# Getting Started with Create React App
+# Mateo's Portfolio (React)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Personal portfolio built with React (Create React App) to showcase personal/professional information, projects, and a contact form that sends emails using EmailJS.
 
-## Available Scripts
+## Tech Stack
 
-In the project directory, you can run:
+- React + Create React App
+- Material UI (MUI): components and icons
+- EmailJS: client-side email sending from the contact form
+- Modular CSS per section (folder `src/styles/`)
 
-### `npm start`
+## Sections / Navigation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Navigation is **hash-based** (no React Router). Available links:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- `#home`
+- `#info`
+- `#projects`
+- `#contact`
 
-### `npm test`
+## Main Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Projects
 
-### `npm run build`
+- Project cards include:
+  - Image carousel (prev/next)
+  - Repository link (GitHub)
+  - Live site link (Language icon) if `url-access` exists in the JSON
+  - Technologies rendered as `InterestCard`
+- Filters:
+  - Text input + **Add filter** button
+  - Active filter “chips” (InterestCard)
+  - Clicking a chip removes only that filter
+  - **Reset filters** button clears everything
+  - Filters by project name or technologies (case-insensitive)
+  - If there are no results: `There are no projects that meet the filter criteria`
+  - When filters are active, matching technologies are highlighted in light green
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Info
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Toggle between **Personal Info** and **Professional Info**
+- Interests/stack lists rendered with `InterestCard`
+- Professional experience section
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Contact
 
-### `npm run eject`
+- Validated form (submit disabled until valid)
+- EmailJS integration (requires environment variables)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Install and Run
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Recommended requirements:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Node.js (LTS)
+- npm
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Commands:
 
-## Learn More
+```bash
+npm install
+npm start
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Open `http://localhost:3000`.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## EmailJS Setup (Contact Form)
 
-### Code Splitting
+The contact form uses these environment variables (Create React App requires the `REACT_APP_` prefix):
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- `REACT_APP_EMAILJS_PUBLIC_KEY`
+- `REACT_APP_EMAILJS_SERVICE_ID`
+- `REACT_APP_EMAILJS_TEMPLATE_ID`
 
-### Analyzing the Bundle Size
+1) Create a `.env` file at the project root:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```bash
+REACT_APP_EMAILJS_PUBLIC_KEY=your_public_key
+REACT_APP_EMAILJS_SERVICE_ID=your_service_id
+REACT_APP_EMAILJS_TEMPLATE_ID=your_template_id
+```
 
-### Making a Progressive Web App
+2) Restart the dev server (`npm start`) to load the env vars.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+3) In EmailJS, the template should accept (based on the current client-side payload):
 
-### Advanced Configuration
+- `to_email`
+- `from_name`
+- `reply_to`
+- `subject`
+- `message`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Note: `to_email` is currently set in the frontend (see `src/components/ContactForm.js`). If you want it to be configurable, change that value or move it to an environment variable.
 
-### Deployment
+## Data and Assets
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Projects
 
-### `npm run build` fails to minify
+Projects are loaded from:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- `src/data/projects.json`
+
+Fields currently used by the UI:
+
+- `id`
+- `title`
+- `description`
+- `repoUrl`
+- `technologies` (array of strings)
+- `images` (array of `{ src, alt }`)
+- `url-access` (string; if empty, the live link is hidden)
+
+Images are served from `public/` (for example: `public/projectImages/...`) and referenced with paths like `/projectImages/...`.
+
+### Top lists (Personal Info)
+
+- `src/data/topVideoGames.json`
+- `src/data/topMovies.json`
+
+## Scripts
+
+```bash
+npm start
+npm test
+npm run build
+```
+
+## Troubleshooting
+
+- If `npm start` exits with an error:
+  - Make sure `npm install` completed successfully
+  - Try deleting `node_modules/` + `package-lock.json` and reinstalling
+  - Use a Node.js LTS version
+- If EmailJS does not send:
+  - Confirm `REACT_APP_EMAILJS_*` variables are set and you restarted the dev server
+  - Check your EmailJS service/template status and allowed origins/domain settings
